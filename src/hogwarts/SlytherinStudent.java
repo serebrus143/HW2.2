@@ -15,6 +15,24 @@ public class SlytherinStudent extends HogwartsStudent{
         this.ambitiousness = ambitiousness;
         this.resourcefulness = resourcefulness;
         this.thirstForPower = thirstForPower;
+        this.powerOfMagic = powerOfMagic;
+        this.transgressionDistance = transgressionDistance;
+    }
+
+    public int getPowerOfMagic() {
+        return  powerOfMagic;
+    }
+
+    public void setPowerOfMagic(int powerOfMagic) {
+        this.powerOfMagic = powerOfMagic;
+    }
+
+    public int getTransgressionDistance() {
+        return transgressionDistance;
+    }
+
+    public void setTransgressionDistance(int transgressionDistance) {
+        this.transgressionDistance = transgressionDistance;
     }
 
     public int getTrickness() {
@@ -59,7 +77,7 @@ public class SlytherinStudent extends HogwartsStudent{
 
     @Override
     protected int sumOfCharacteristics() {
-        return trickness + resoluteness + ambitiousness + resourcefulness + thirstForPower;
+        return trickness + resoluteness + ambitiousness + resourcefulness + thirstForPower + powerOfMagic + transgressionDistance;
     }
 
     public void compareTo(SlytherinStudent slytherinStudent) {

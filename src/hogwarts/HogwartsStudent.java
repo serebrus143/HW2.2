@@ -3,8 +3,8 @@ package hogwarts;
 public abstract class HogwartsStudent {
 
     private String name;
-    private int powerOfMagic;
-    private int transgressionDistance;
+    public int powerOfMagic;
+    public int transgressionDistance;
 
     public HogwartsStudent(String name, int powerOfMagic, int transgressionDistance) {
         this.name = name;

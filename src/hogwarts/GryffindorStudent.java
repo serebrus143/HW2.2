@@ -4,13 +4,31 @@ public class GryffindorStudent extends HogwartsStudent{
 
     private int nobility;
     private int honor;
-    private  int bravery;
+    private int bravery;
 
     public GryffindorStudent(String name, int powerOfMagic, int transgressionDistance, int nobility, int honor, int bravery) {
         super(name, powerOfMagic, transgressionDistance);
         this.nobility = nobility;
         this.honor = honor;
         this.bravery = bravery;
+        this.powerOfMagic = powerOfMagic;
+        this.transgressionDistance = transgressionDistance;
+    }
+
+    public int getPowerOfMagic() {
+        return  powerOfMagic;
+    }
+
+    public void setPowerOfMagic(int powerOfMagic) {
+        this.powerOfMagic = powerOfMagic;
+    }
+
+    public int getTransgressionDistance() {
+        return transgressionDistance;
+    }
+
+    public void setTransgressionDistance(int transgressionDistance) {
+        this.transgressionDistance = transgressionDistance;
     }
 
     public int getNobility() {
@@ -37,9 +55,11 @@ public class GryffindorStudent extends HogwartsStudent{
         this.bravery = bravery;
     }
 
+
+
     @Override
     protected int sumOfCharacteristics() {
-        return nobility + honor + bravery;
+        return nobility + honor + bravery + powerOfMagic + transgressionDistance;
     }
 
     public void compareTo(GryffindorStudent gryffindorStudent) {
